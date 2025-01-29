@@ -37,7 +37,7 @@ a::after {
 
 a:hover::after {
     transform: scaleX(1); /* Skala ke 1 saat di-hover */
-=======
+}
 
 @keyframes pulse {
     0% {
