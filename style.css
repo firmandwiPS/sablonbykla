@@ -1,0 +1,4 @@
+body {
+    overflow-x: hidden; /* Menghindari scroll horizontal */
+    min-height: 100vh; /* Memastikan body memiliki tinggi minimum */
+}
