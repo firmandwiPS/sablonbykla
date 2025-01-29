@@ -2,3 +2,21 @@ body {
     overflow-x: hidden; /* Menghindari scroll horizontal */
     min-height: 100vh; /* Memastikan body memiliki tinggi minimum */
 }
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated-button {
+    animation: pulse 2s ease-in-out infinite;
+    
+}
