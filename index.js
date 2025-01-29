@@ -1,3 +1,4 @@
+
 document.getElementById('menu-toggle').addEventListener('click', function() {
     const mobileMenu = document.getElementById('mobile-menu');
     if (mobileMenu.classList.contains('hidden')) {
@@ -18,3 +19,4 @@ document.getElementById('menu-toggle').addEventListener('click', function() {
         mobileMenu.classList.toggle('-translate-y-full');
         mobileMenu.classList.toggle('hidden');
     });
+
