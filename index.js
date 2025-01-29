@@ -1,22 +1,20 @@
 
-document.getElementById('menu-toggle').addEventListener('click', function() {
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (mobileMenu.classList.contains('hidden')) {
-        mobileMenu.classList.remove('hidden', 'hide');
-        mobileMenu.classList.add('show');
-    } else {
-        mobileMenu.classList.remove('show');
-        mobileMenu.classList.add('hide');
-        setTimeout(() => {
-            mobileMenu.classList.add('hidden');
-        }, 300); // Waktu yang sama dengan durasi transisi
-    }
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('-translate-y-full');
+});
+
+mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.add('-translate-y-full');
+    });
 });
 
     
-document.getElementById('menu-toggle').addEventListener('click', function() {
-        const mobileMenu = document.getElementById('mobile-kontak');
-        mobileMenu.classList.toggle('-translate-y-full');
-        mobileMenu.classList.toggle('hidden');
-    });
+
 
