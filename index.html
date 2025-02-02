@@ -13,41 +13,39 @@
 </head>
 <body class="bg-gray-100 font-sans ">
 
-    <nav class="bg-blue-600 text-white fixed w-full top-0 shadow-lg z-50">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <a href="#" class="text-2xl font-bold flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-                Sablon.bykla
-            </a>
-            <button id="menu-toggle" class="md:hidden focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
-            <ul id="menu" class="hidden md:flex space-x-4">
-                <li><a href="#home" class="hover:text-gray-200 transition duration-300">Beranda</a></li>
-                <li><a href="#layanan" class="hover:text-gray-200 transition duration-300">Layanan</a></li>
-                <li><a href="#galeri" class="hover:text-gray-200 transition duration-300">Informasi About Us</a></li>
-                <li><a href="/kontak.html" class="hover:text-gray-200 transition duration-300">Kontak</a></li>
-            </ul>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 p-4 transition-transform transform -translate-y-full">
-            <ul class="space-y-4">
-                <li><a href="#home" class="block text-white hover:text-gray-300 transition duration-300">Beranda</a></li>
-                <li><a href="#layanan" class="block text-white hover:text-gray-300 transition duration-300">Layanan</a></li>
-                <li><a href="#galeri" class="block text-white hover:text-gray-300 transition duration-300">Informasi About Us</a></li>
-                <li><a href="#footer" class="block text-white hover:text-gray-300 transition duration-300">Kontak</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="bg-blue-600 text-white fixed w-full top-0 shadow-lg z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+        <a href="#" class="text-2xl font-bold flex items-center">
+            <img src="/img/iconweb.jpg" alt="" class="w-10 h-10 rounded-full mr-2">
+            Sablon.bykla
+        </a>
+        <button id="menu-toggle" class="md:hidden focus:outline-none rounded-full bg-blue-700 p-2 hover:bg-blue-800 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+        <ul id="menu" class="hidden md:flex space-x-4">
+            <li><a href="#home" class="hover:text-gray-200 transition duration-300">Beranda</a></li>
+            <li><a href="#layanan" class="hover:text-gray-200 transition duration-300">Layanan</a></li>
+            <li><a href="#galeri" class="hover:text-gray-200 transition duration-300">Information About Us</a></li>
+            <li><a href="/kontak.html" class="hover:text-gray-200 transition duration-300">Kontak</a></li>
+        </ul>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-700 p-4 transition-transform transform -translate-y-full">
+        <ul class="space-y-4">
+            <li><a href="#home" class="block text-white hover:text-gray-300 transition duration-300">Beranda</a></li>
+            <li><a href="#layanan" class="block text-white hover:text-gray-300 transition duration-300">Layanan</a></li>
+            <li><a href="#galeri" class="block text-white hover:text-gray-300 transition duration-300">Information About Us</a></li>
+            <li><a href="#footer" class="block text-white hover:text-gray-300 transition duration-300">Kontak</a></li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section id="home" class="bg-blue-500 text-white py-20 md:py-20">
         <div class="container mx-auto text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">CUSTOM SABLON BYKLA</h1>
-            <p class="text-base md:text-lg mb-8">Cetak desain T-Shirt, Sweater, Top, dan lainnya sesuai keinginan Anda dengan hasil yang memuaskan.</p>
+            <p class="text-base md:text-lg mb-8">Cetak desain T-Shirt, Sweater, Tote bag, dan lainnya sesuai keinginan Anda dengan hasil yang memuaskan.</p>
             <a href="#layanan" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold animated-button hover:bg-gray-200 transition duration-300 transform hover:scale-105 active:scale-95">Lihat Layanan</a>
             
             <div class="mt-8">
@@ -165,62 +163,134 @@
 
     <!-- Galeri Section -->
     <section id="galeri" class="bg-gray-200 py-16">
-        <h2 class="text-4xl font-bold text-blue-600 text-center mb-8">Informasi About Us</h2>
+        <h2 class="text-4xl font-bold text-blue-600 text-center mb-8">Information About Us</h2>
         <div class="container mx-auto px-4">
             <h2 class="text-2xl font-bold text-center mb-8">Colour Options</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6 mb-12">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
+                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
                     <img src="/img/colour1.jpg" alt="Sablon Kaos 1" class="w-full h-full object-cover">
+                    <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                        Colour T-Shirt
+                    </figcaption>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
+                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
                     <img src="/img/colour2.jpg" alt="Sablon Kaos 2" class="w-full h-full object-cover">
+                    <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                        Colour Sweater
+                    </figcaption>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
+                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
                     <img src="/img/colour3.jpg" alt="Sablon Kaos 3" class="w-full h-full object-cover">
+                    <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                        Colour Tote Bag
+                    </figcaption>
                 </div>
             </div>
+            
+            
+            
     
             <h2 class="text-2xl font-bold text-center mb-8">Price List</h2>
-            <div class="flex justify-center mb-12">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
-                    <img src="/img/price-list.jpg" alt="Price List" class="w-full h-full object-cover">
-                </div>
-            </div>
+<div class="flex justify-center gap-6 mb-12 grid grid-cols-2">
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition  group">
+        <img src="/img/price-list.jpg" alt="Price List" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Price List
+        </figcaption>
+    </div>
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition  group">
+        <img src="/img/c9.jpg" alt="Price List" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Price List
+        </figcaption>
+    </div>
+</div>
+
+<h2 class="text-2xl font-bold text-center mb-8">Ukuran Sablon</h2>
+<div class="flex justify-center mb-12">
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition  group">
+        <img src="/img/ukuran-p.jpg" alt="Ukuran Sablon" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Ukuran Sablon
+        </figcaption>
+    </div>
+</div>
+
+<h2 class="text-2xl font-bold text-center mb-8">Size Chart</h2>
+<div class="flex justify-center mb-12">
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition group">
+        <img src="/img/size-chart.jpg" alt="Size Chart" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Size Chart
+        </figcaption>
+    </div>
+</div>
+
     
-            <h2 class="text-2xl font-bold text-center mb-8">Ukuran Sablon</h2>
-            <div class="flex justify-center mb-12">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
-                    <img src="/img/ukuran-p.jpg" alt="Ukuran Sablon" class="w-full h-full object-cover">
-                </div>
-            </div>
-    
-            <h2 class="text-2xl font-bold text-center mb-8">Size Chart</h2>
-            <div class="flex justify-center mb-12">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
-                    <img src="/img/size-chart.jpg" alt="Size Chart" class="w-full h-full object-cover">
-                </div>
-            </div>
-    
-            <h2 class="text-2xl font-bold text-center mb-8">Contoh Desain</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
-                    <img src="/img/c1.jpg" alt="Contoh Desain 1" class="w-full h-full object-cover">
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
-                    <img src="/img/c2.jpg" alt="Contoh Desain 2" class="w-full h-full object-cover">
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
-                    <img src="/img/c3.jpg" alt="Contoh Desain 3" class="w-full h-full object-cover">
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
-                    <img src="/img/c4.jpg" alt="Contoh Desain 4" class="w-full h-full object-cover">
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
-                    <img src="/img/c5.jpg" alt="Contoh Desain 5" class="w-full h-full object-cover">
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110">
-                    <img src="/img/c6.jpg" alt="Contoh Desain 6" class="w-full h-full object-cover">
-                </div>
+<h2 class="text-2xl font-bold text-center mb-8">Contoh Desain</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6">
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
+        <img src="/img/c1.jpg" alt="Contoh Desain 1" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Contoh Desain 1
+        </figcaption>
+    </div>
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
+        <img src="/img/c2.jpg" alt="Contoh Desain 2" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Contoh Desain 2
+        </figcaption>
+    </div>
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
+        <img src="/img/c7.jpg" alt="Contoh Desain 3" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Contoh Desain 3
+        </figcaption>
+    </div>
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
+        <img src="/img/c8.jpg" alt="Contoh Desain 4" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Contoh Desain 4
+        </figcaption>
+    </div>
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
+        <img src="/img/c3.jpg" alt="Contoh Desain 5" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Contoh Desain 5
+        </figcaption>
+    </div>
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
+        <img src="/img/c4.jpg" alt="Contoh Desain 6" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Contoh Desain 6
+        </figcaption>
+    </div>
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
+        <img src="/img/c5.jpg" alt="Contoh Desain 7" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Contoh Desain 7
+        </figcaption>
+    </div>
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
+        <img src="/img/c6.jpg" alt="Contoh Desain 8" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Contoh Desain 8
+        </figcaption>
+    </div>
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
+        <img src="/img/c10.jpg" alt="Contoh Desain 9" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Contoh Desain 9
+        </figcaption>
+    </div>
+    <div class="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-110 group">
+        <img src="/img/c11.jpg" alt="Contoh Desain 10" class="w-full h-full object-cover">
+        <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center text-lg font-bold p-2 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+            Contoh Desain 10
+        </figcaption>
+    </div>
+</div>
+
             </div>
         </div>
     </section>
