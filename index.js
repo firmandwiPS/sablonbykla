@@ -1,21 +1,26 @@
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
 
-const menuToggle = document.getElementById('menu-toggle');
-const mobileMenu = document.getElementById('mobile-menu');
-const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-
-menuToggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-    mobileMenu.classList.toggle('-translate-y-full');
+menuToggle.addEventListener("click", () => {
+    if (mobileMenu.classList.contains("slide-up")) {
+        mobileMenu.classList.remove("slide-up");
+        mobileMenu.classList.add("slide-down");
+        mobileMenu.classList.remove("hidden");
+    } else {
+        mobileMenu.classList.remove("slide-down");
+        mobileMenu.classList.add("slide-up");
+        setTimeout(() => mobileMenu.classList.add("hidden"), 300);
+    }
 });
 
-mobileMenuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        mobileMenu.classList.add('-translate-y-full');
+// Tutup menu setelah klik link
+document.querySelectorAll("#mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("slide-down");
+        mobileMenu.classList.add("slide-up");
+        setTimeout(() => mobileMenu.classList.add("hidden"), 300);
     });
-});
-
-    
+}); 
 
 
 

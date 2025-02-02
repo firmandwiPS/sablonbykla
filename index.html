@@ -11,35 +11,37 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM6g0g5z5e5e5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
         <link rel="icon" href="iconweb.jpg" type="jpg">
 </head>
-<body class="bg-gray-100 font-sans ">
+<body class="scroll-smooth">
 
-<nav class="bg-blue-600 text-white fixed w-full top-0 shadow-lg z-50">
-    <div class="container mx-auto flex justify-between items-center p-4">
-        <a href="#" class="text-2xl font-bold flex items-center">
-            <img src="/img/iconweb.jpg" alt="" class="w-10 h-10 rounded-full mr-2">
-            Sablon.bykla
-        </a>
-        <button id="menu-toggle" class="md:hidden focus:outline-none rounded-full bg-blue-700 p-2 hover:bg-blue-800 transition duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-        </button>
-        <ul id="menu" class="hidden md:flex space-x-4">
-            <li><a href="#home" class="hover:text-gray-200 transition duration-300">Beranda</a></li>
-            <li><a href="#layanan" class="hover:text-gray-200 transition duration-300">Layanan</a></li>
-            <li><a href="#galeri" class="hover:text-gray-200 transition duration-300">Information About Us</a></li>
-            <li><a href="/kontak.html" class="hover:text-gray-200 transition duration-300">Kontak</a></li>
-        </ul>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-blue-700 p-4 transition-transform transform -translate-y-full">
-        <ul class="space-y-4">
-            <li><a href="#home" class="block text-white hover:text-gray-300 transition duration-300">Beranda</a></li>
-            <li><a href="#layanan" class="block text-white hover:text-gray-300 transition duration-300">Layanan</a></li>
-            <li><a href="#galeri" class="block text-white hover:text-gray-300 transition duration-300">Information About Us</a></li>
-            <li><a href="#footer" class="block text-white hover:text-gray-300 transition duration-300">Kontak</a></li>
-        </ul>
-    </div>
-</nav>
+    <nav class="bg-blue-600 text-white fixed w-full top-0 shadow-lg z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="#" class="text-2xl font-bold flex items-center">
+                <img src="/img/iconweb.jpg" alt="" class="w-10 h-10 rounded-full mr-2">
+                Sablon.bykla
+            </a>
+            <button id="menu-toggle" class="md:hidden focus:outline-none rounded-full bg-blue-700 p-2 hover:bg-blue-800 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <ul class="hidden md:flex space-x-4">
+                <li><a href="#home" class="hover:text-gray-200 transition duration-300">Beranda</a></li>
+                <li><a href="#layanan" class="hover:text-gray-200 transition duration-300">Layanan</a></li>
+                <li><a href="#galeri" class="hover:text-gray-200 transition duration-300">Information About Us</a></li>
+                <li><a href="#footer" class="hover:text-gray-200 transition duration-300">Kontak</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="fixed top-16 left-0 w-full bg-blue-700 p-4 hidden slide-up">
+            <ul class="space-y-4">
+                <li><a href="#home" class="block text-white hover:text-gray-300 transition duration-300">Beranda</a></li>
+                <li><a href="#layanan" class="block text-white hover:text-gray-300 transition duration-300">Layanan</a></li>
+                <li><a href="#galeri" class="block text-white hover:text-gray-300 transition duration-300">Information About Us</a></li>
+                <li><a href="#footer" class="block text-white hover:text-gray-300 transition duration-300">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="bg-blue-500 text-white py-20 md:py-20">
